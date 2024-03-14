@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_orders">
+
+    <!--<fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.myapplication.ui.login.LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_ordersFragment"
+            app:destination="@id/nav_home"/>
+    </fragment>-->
+
+
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="com.example.myapplication.ui.orders.OrdersFragment"
+        android:label="@string/menu_orders"
+        tools:layout="@layout/fragment_orders" >
+        <action
+            android:id="@+id/action_nav_orders_to_nav_order_details"
+            app:destination="@id/nav_order_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_order_details"
+        android:name="com.example.myapplication.ui.orderdetails.OrderDetailsFragment"
+        android:label="@string/order_details"
+        tools:layout="@layout/fragment_order_details">
+        <action
+            android:id="@+id/action_nav_order_details_to_nav_assign_courier"
+            app:destination="@id/nav_assign_courier" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_assign_courier"
+        android:name="com.example.myapplication.ui.assigncourier.AssignCourierFragment"
+        android:label="@string/order_assign"
+        tools:layout="@layout/fragment_assign_courier"/>
+
+    <fragment
+        android:id="@+id/nav_couriers"
+        android:name="com.example.myapplication.ui.couriers.CouriersFragment"
+        android:label="@string/menu_couriers"
+        tools:layout="@layout/fragment_couriers">
+        <action
+            android:id="@+id/action_nav_couriers_to_nav_courierDelivers"
+            app:destination="@id/nav_courierDelivers" />
+        <action
+            android:id="@+id/action_nav_couriers_to_nav_edit_user"
+            app:destination="@id/nav_edit_user" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_active_deliveries"
+        android:name="com.example.myapplication.ui.activedeliveries.ActiveDeliveriesFragment"
+        android:label="@string/menu_orders_in_delivery"
+        tools:layout="@layout/fragment_active_deliveries" >
+        <action
+            android:id="@+id/action_nav_active_deliveries_to_nav_delivery"
+            app:destination="@id/nav_delivery" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_delivery"
+        android:name="com.example.myapplication.ui.delivery.DeliveryFragment"
+        android:label="@string/nav_info"
+        tools:layout="@layout/fragment_delivery" />
+
+    <fragment
+        android:id="@+id/nav_courierDelivers"
+        android:name="com.example.myapplication.ui.courierdeliveries.CourierDeliveriesFragment"
+        android:label="@string/menu_courier_delivers"
+        tools:layout="@layout/fragment_courier_deliveries" />
+
+    <fragment
+        android:id="@+id/nav_edit_users"
+        android:name="com.example.myapplication.ui.editemployees.EditEmployeesFragment"
+        android:label="@string/menu_users"
+        tools:layout="@layout/fragment_edit_employees">
+
+        <action
+            android:id="@+id/action_nav_edit_users_to_nav_edit_user"
+            app:destination="@id/nav_edit_user" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_edit_user"
+        android:name="com.example.myapplication.ui.edituser.EditUserFragment"
+        android:label="@string/menu_edit"
+        tools:layout="@layout/fragment_edit_user"/>
+</navigation>

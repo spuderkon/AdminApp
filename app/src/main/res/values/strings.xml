@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_info">Информация</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_orders" translatable="false">Новые</string>
+    <string name="order_details">Детали заказа</string>
+    <string name="order_assign">Назначить</string>
+    <string name="menu_orders_in_delivery" translatable="false">В доставке</string>
+    <string name="menu_users" translatable="false">Пользователи</string>
+    <string name="menu_courier_delivers" translatable="false">Доставки курьера</string>
+    <string name="menu_couriers">Курьеры</string>
+    <string name="menu_edit_users">Редактирование</string>
+    <string name="menu_edit_user">Пользователь</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_edit" translatable="false">Редактирование</string>
+    <string name="next">Next</string>
+    <string name="phone" translatable="false">Номер телефона</string>
+    <string name="password" translatable="false">Пароль</string>
+    <string name="logo" translatable="false">Логотип</string>
+    <string name="role">Роль: </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
